@@ -17,7 +17,12 @@ second to 15th second and then to generate a combined gif.
 python3  main.py -v /path/to/test.mp4 -p 0,5:10,15
 ```
 A gif of 10 seconds will be created in the folder in which the
-test video resides. Of course, you are welcome to assign a path
+test video resides. If you do not want to concatenate the two
+GIFs into one, parameter `-c` can be set to `0`
+```
+python3  main.py -v /path/to/test.mp4 -p 0,5:10,15 -c 0
+```
+Of course, you are welcome to assign a path
 to save the created gif
 ```
 python3  main.py -v /path/to/test.mp4 -p 0,5:10,15 -s /path/to/test.gif
